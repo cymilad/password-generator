@@ -1,0 +1,67 @@
+<!--Codeing By Milad Ranjbar (@cymilad)-->
+
+<!DOCTYPE html>
+<html lang="fa" rel="rtl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./image/password.ico">
+    <title>ساخت پسورد</title>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>ایجاد پسورد</h2>
+    <div class="result-container">
+        <span id="result"></span>
+        <button class="btn" id="clipboard">
+            <i class="far fa-clipboard"></i>
+        </button>
+    </div>
+
+
+    <div class="settings">
+        <div class="setting">
+            <input type="number" id="length" min="4" max="20" value="20">
+            <label>طول پسورد</label>
+        </div>
+        <div class="setting">
+            <input type="checkbox" id="uppercase" checked>
+            <label>شامل حرف های بزرگ</label>
+        </div>
+        <div class="setting">
+            <input type="checkbox" id="lowercase" checked>
+            <label>شامل حرف های کوچک</label>
+        </div>
+        <div class="setting">
+            <input type="checkbox" id="numbers" checked>
+            <label>شامل اعداد</label>
+        </div>
+        <div class="setting">
+            <input type="checkbox" id="symbols" checked>
+            <label>شامل نماد ها</label>
+        </div>
+
+        <button class="btn btn-large" id="generate">
+            ایجاد پسورد
+        </button>
+    </div>
+
+</div>
+
+
+<p class="milad">
+    طراحی شده توسط مهندس <span><a class="a-link" href="https://t.me/cymilad" target="_blank">میلاد رنجبر</a></span>
+</p>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
